@@ -6,8 +6,12 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
 # Download NLTK data (needed for Streamlit Cloud)
-nltk.download('stopwords')
-nltk.download('wordnet')
+@st.cache_resource
+def download_nltk_data():
+    nltk.download('stopwords')
+    nltk.download('wordnet')
+
+download_nltk_data()
 # Load model & vectorizer
 model = joblib.load("models/plagiarism_model.pkl")
 vectorizer = joblib.load("models/tfidf_vectorizer.pkl")
