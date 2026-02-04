@@ -128,6 +128,7 @@ AI-generated text detection
 Learning NLP & ML deployment
 Portfolio / placement project
 
+---
 
 ## Model Performance
 
@@ -135,12 +136,16 @@ Accuracy: ~99%
 Precision, Recall, F1-score: High and balanced
 Evaluated using confusion matrix and classification report
 
+---
+
 ## Future Improvements
 
 Use transformer-based models (BERT)
 Support multi-language detection
 Improve dataset diversity
 Deploy as a cloud-based API
+
+---
 
 ## Author
 Anusha K A
