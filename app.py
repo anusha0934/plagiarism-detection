@@ -1,9 +1,13 @@
 import streamlit as st
+import nltk
 import joblib
 import re
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
+# Download NLTK data (needed for Streamlit Cloud)
+nltk.download('stopwords')
+nltk.download('wordnet')
 # Load model & vectorizer
 model = joblib.load("models/plagiarism_model.pkl")
 vectorizer = joblib.load("models/tfidf_vectorizer.pkl")
