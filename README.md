@@ -1,6 +1,11 @@
 ## AI vs Human Text Detector
 
-An end-to-end **Natural Language Processing (NLP)** project that classifies input text as **AI-generated** or **Human-written** using Machine Learning techniques. The project includes data preprocessing, model training, evaluation, and deployment via a **Streamlit web application**.
+A Machine Learning–based web application that classifies whether a given text is AI-generated or Human-written using Natural Language Processing (NLP) techniques. The app is deployed live using Streamlit Community Cloud.
+
+## Live Demo
+
+🔗 App URL:
+👉 https://plagiarism-detection-vue2xqhmgnnttkcmahk3oq.streamlit.app/
 
 ---
 
@@ -13,27 +18,37 @@ This project builds a machine learning-based classifier that analyzes textual pa
 
 ## Features
 
-- Text preprocessing using **NLTK**
-- Feature extraction using **TF-IDF Vectorization**
-- Classification using **Logistic Regression**
+- Text preprocessing using NLTK
+- Feature extraction using TF-IDF Vectorization
+- Classification using Logistic Regression
 - Model confidence score using probability estimates
-- Interactive **Streamlit Web App**
+- Interactive Streamlit Web App
+- Detects AI vs Human written text
+- Simple and interactive web UI
+- Real-time prediction
+- Deployed online for public access
 - End-to-end ML pipeline (data → model → deployment)
 
 ---
 
 ## Tech Stack
 
-- **Programming Language:** Python  
-- **Libraries:**  
-  - Pandas  
-  - NumPy  
-  - Scikit-learn  
-  - NLTK  
-  - Joblib  
-  - Streamlit  
-- **Model:** Logistic Regression  
-- **Vectorization:** TF-IDF  
+Programming Language: Python
+Libraries:
+- Scikit-learn
+- NLTK
+- NumPy
+- Pandas
+
+NLP Techniques:
+- Text cleaning
+- Stopword removal
+- Lemmatization
+- TF-IDF Vectorization
+Model: Machine Learning Classifier
+Frontend: Streamlit
+Deployment: Streamlit Community Cloud
+Version Control: Git & GitHub
 
 ---
 
@@ -79,10 +94,10 @@ plagiarism-detection/
 ## How It Works
 
 1. Input text is cleaned (lowercasing, stopword removal, lemmatization)
-2. Cleaned text is transformed using **TF-IDF Vectorizer**
+2. Cleaned text is transformed using TF-IDF Vectorizer
 3. Logistic Regression model predicts:
-   - **AI Generated**
-   - **Human Written**
+   - AI Generated
+   - Human Written
 4. Confidence score is calculated using prediction probabilities
 5. Result is displayed in a Streamlit web interface
 
@@ -103,6 +118,15 @@ streamlit run app.py
 
 Step 4: Open in Browser
 http://localhost:8501
+
+---
+
+## Example Use Cases
+
+Academic content verification
+AI-generated text detection
+Learning NLP & ML deployment
+Portfolio / placement project
 
 
 ## Model Performance
